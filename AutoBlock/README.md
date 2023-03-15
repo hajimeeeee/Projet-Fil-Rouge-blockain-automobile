@@ -44,11 +44,11 @@ Aucune installation particulière n'est nécessaire, il suffit d'avoir `python 3
 
 # Exécuter la démo
 Démarrez le réseau et initialisez la blockchain en :
-``console
+```
 $ ./blockchain.py
 ```
 Dans un second terminal, exécutez ce qui suit :
-``console
+```
 $ ./manufacturer.py
 ```
 afin de créer un bloc qui sera miné par des mineurs (processus). Le script ci-dessus simule un fabricant. Il génère un identifiant aléatoire qui est considéré comme l'identifiant de la voiture fabriquée. Il fixe son kilométrage à 0 et définit des données supplémentaires telles que le fabricant, le modèle, l'année et le pays d'origine.
