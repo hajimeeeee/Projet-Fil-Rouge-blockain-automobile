@@ -37,7 +37,8 @@ Les informations à stocker sur la blockchain pour suivre un véhicule comprenne
 ### 3. Créer des smart contracts
 Les smart contracts sont des programmes autonomes qui s'exécutent automatiquement lorsqu'une condition spécifique est remplie. Ils peuvent être utilisés pour automatiser la gestion des informations de suivi de véhicule sur la blockchain. Par exemple, un smart contract pourrait être utilisé pour déclencher une notification à un propriétaire de véhicule lorsque le kilométrage de son véhicule atteint un certain seuil.
 
-### 4. Enregistrer les informations de suivi sur la blockchain : Une fois que les informations clés ont été identifiées et les smart contracts créés, les données de suivi peuvent être enregistrées sur la blockchain à l'aide d'un protocole de consensus tel que la preuve de travail ou la preuve d'enjeu.
+### 4. Enregistrer les informations de suivi sur la blockchain
+Une fois que les informations clés ont été identifiées et les smart contracts créés, les données de suivi peuvent être enregistrées sur la blockchain à l'aide d'un protocole de consensus tel que la preuve de travail ou la preuve d'enjeu.
 
 ### 5. Créer une interface utilisateur pour accéder aux informations de suivi
 Une interface utilisateur conviviale peut être créée pour permettre aux parties autorisées d'accéder facilement aux informations de suivi du véhicule. Cette interface peut être utilisée pour vérifier l'historique du véhicule, les propriétaires précédents, les entretiens et réparations effectués, etc.
