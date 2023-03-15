@@ -56,20 +56,21 @@ afin de créer un bloc qui sera miné par des mineurs (processus). Le script ci-
 Exécutez le script suivant pour simuler un changement de propriétaire de la voiture.
 REMARQUE : il s'agit d'une simple démo, les utilisateurs ne doivent donc pas nécessairement exister.
 Vous pouvez inventer l'identifiant de l'acheteur, cependant, pour l'identifiant de la voiture, utilisez le script `fabriquant.py` généré à l'étape précédente.
-``console
+```
 $ ./vendeur.py <vendeur_ID> <acheteur_ID> <car_ID>
 ```
 
 Exécutez le script suivant afin de simuler une vérification du kilométrage d'une voiture.
-```console
+```
 $ ./garage.py <car_ID>
 ```
 
 Essayez à nouveau de changer de propriétaire.
-``console
+```
 $ ./vendeur.py <vendeur_ID> <acheteur_ID> <car_ID>
 ```
 
 Exécutez le script suivant pour dresser la liste de l'historique de la voiture. Il imprimera tous les blocs où l'identifiant de la voiture est trouvé.
-```console
+```
 $ ./historique.py <car_ID>
+```
