@@ -11,7 +11,7 @@ PORT = 65432        # The port used by the server
 
 # for simplicity the variable will simulate a public key, but no public/private
 # key pairs are actually used 
-PUBLIC_KEY = "1234-STK-station"
+PUBLIC_KEY = "GARAGE OFFICIEL MINI"
 
 if len(sys.argv) != 2:
     print("Fournir l'ID d'une voiture!")
