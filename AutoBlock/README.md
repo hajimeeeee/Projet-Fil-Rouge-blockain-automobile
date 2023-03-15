@@ -49,20 +49,20 @@ $ ./blockchain.py
 ```
 Dans un second terminal, exécutez ce qui suit :
 ```
-$ ./manufacturer.py
+$ ./fabriquant.py
 ```
 afin de créer un bloc qui sera miné par des mineurs (processus). Le script ci-dessus simule un fabricant. Il génère un identifiant aléatoire qui est considéré comme l'identifiant de la voiture fabriquée. Il fixe son kilométrage à 0 et définit des données supplémentaires telles que le fabricant, le modèle, l'année et le pays d'origine.
 
 Exécutez le script suivant pour simuler un changement de propriétaire de la voiture.
 REMARQUE : il s'agit d'une simple démo, les utilisateurs ne doivent donc pas nécessairement exister.
-Vous pouvez inventer l'identifiant de l'acheteur, cependant, pour l'identifiant de la voiture, utilisez le script `manufacturer.py` généré à l'étape précédente.
+Vous pouvez inventer l'identifiant de l'acheteur, cependant, pour l'identifiant de la voiture, utilisez le script `fabriquant.py` généré à l'étape précédente.
 ``console
 $ ./vendeur.py <vendeur_ID> <acheteur_ID> <car_ID>
 ```
 
 Exécutez le script suivant afin de simuler une vérification du kilométrage d'une voiture.
 ```console
-$ ./service_station.py <car_ID>
+$ ./garage.py <car_ID>
 ```
 
 Essayez à nouveau de changer de propriétaire.
@@ -72,4 +72,4 @@ $ ./vendeur.py <vendeur_ID> <acheteur_ID> <car_ID>
 
 Exécutez le script suivant pour dresser la liste de l'historique de la voiture. Il imprimera tous les blocs où l'identifiant de la voiture est trouvé.
 ```console
-$ ./car_history.py <car_ID>
+$ ./historique.py <car_ID>
