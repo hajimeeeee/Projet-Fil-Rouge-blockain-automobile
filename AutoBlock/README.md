@@ -1,4 +1,4 @@
-#Description des fonctionnalitées
+# Description des fonctionnalitées
 #### Un fabriquant
 Une fois qu'une voiture est fabriquée, elle est ajoutée à la blockchain en fournissant des informations de base sur la voiture, son ID, son pays d'origine, son kilométrage égal à 0, etc.
 
