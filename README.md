@@ -47,3 +47,28 @@ Une interface utilisateur conviviale peut être créée pour permettre aux parti
 Pour s'assurer que le système fonctionne correctement, il est important de le tester en simulant différents scénarios d'utilisation. Les tests doivent inclure la vérification de l'exactitude et de l'intégrité des données stockées sur la blockchain, ainsi que la vérification de la capacité du système à gérer différents cas d'utilisation.
 
 En utilisant cette approche, il est possible de créer un système de suivi de véhicule sécurisé, précis et transparent basé sur la blockchain. Ce système peut être utilisé pour suivre les informations importantes liées à un véhicule tout au long de sa durée de vie, ce qui peut aider à améliorer la confiance des acheteurs et des vendeurs dans le marché des voitures d'occasion.
+
+## Compte rendu 
+### 25/01 : Idée de projet 
+- Recherche de l'idée de projet Blockchain 
+- Veille et recherche sur les Blockchain automobile
+
+### 08/02 : Mise en place de l'infrastructure de la blockchain
+- Création de la base de la blockchain en python -> Création "Block.py" & "Blockchain.py" utilisée pour créer, manipuler et vérifier des blocs de données.
+- Implémentation d'un réseau blockchain simulé en utilisant des processus indépendants pour simuler les mineurs.
+
+### 01/03 : 
+- Ajustement et améliorations des fichiers "Block.py" & "Blockchain.py"
+- Ajout d'une classe "Miner.py" qui implémente les méthodes associées au rôle de mineur dans une blockchain
+
+### 15/03 :
+- Veille & recherche sur les différentes fonctionnalités que l'ont pourrait ajouter au projet
+- Ajout du fichier fabricant.py, ou dans ce fichier sera contenu chaque nouvelle voiture produite -> Clé publique : plaque d'immatriculation
+- Ajout du vendeur.py, qui sera utilisé pour une transaction d'une voiture d'un vendeur, à un acheteur
+### 29/03 :
+- Ajout garage.py, peremettant de vérifier le kilométrage d'une voiture. (aléatoire pour la démo)
+- Mise à jour global du dépot, avec description des fonctionnalités
+### 12/03 : 
+- Tentative d'ajout d'un fichier permettant de conserver l'historique d'une voiture. 
+- Correction des bugs
+

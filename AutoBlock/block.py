@@ -5,22 +5,25 @@ import hashlib
 
 class Block:
     def __init__(self, timestamp, car, id):
+        # Initialisation des attributs du bloc
         self.timestamp = timestamp
         self.car = car
         self.id = id
-        # the following is up to a miner
+         # Les éléments suivants sont déterminés par un mineur
         self.nonce = 0
         self.previous_hash = ""
         self.hash = ""
 
     def increment_nonce(self, number):
+        #Incrémente la valeur du nonce d'un certain nombre.
         self.nonce += number
 
     def get_block_obj(self, add_hash=False):
-        """Returns the block as a dictionary.
+        """Renvoie le bloc sous forme de dictionnaire.
 
-        :param add_hash: Whether hash of the block is included or not
-        :type add_hash: Bool
+        :param add_hash: Booléen pour indiquer si le hachage du bloc doit être inclus ou non.
+        :type add_hash: bool
+        :return: Dictionnaire représentant le bloc.
         :rtype: dict
         """
         ret = {
@@ -35,7 +38,7 @@ class Block:
         return ret
 
     def to_string(self):
-        """Returns the block object (dict) in a string format.
+        """Renvoie l'objet bloc (dictionnaire) y compris son hachage sous forme de chaîne de caractères
 
         :rtype: string
         """
@@ -52,25 +55,26 @@ class Block:
         return str(b)
 
     def get_hash(self):
-        """Calculates a hash of the block.
+        """Calcule le hachage du bloc.
 
-        :return: a hash of the block
-        :rtype: string
+
+        :return: Le hachage du bloc.
+        :rtype: str
         """
         return hashlib.sha224(self.to_string().encode()).hexdigest()
 
     def is_block_valid(self):
-        """Checks block's validity.
+        """Vérifie la validité du bloc.
 
-        A block is valid if: TODO
+        Un bloc est considéré comme valide si : TODO
 
-        :return: True if the block is valid, otherwise False
-        :rtype: Bool
+        :return: True si le bloc est valide, sinon False.
+        :rtype: bool
         """
-        # first check if the hash was calculated correctly
+        # Vérification si le hachage a été calculé correctement
         if self.hash != self.get_hash():
             return False
-        # check integrity and validity of the data
+        # Vérification de l'intégrité et de la validité des données
         # TODO
 
         return True
