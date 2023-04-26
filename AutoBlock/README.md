@@ -68,7 +68,7 @@ $ ./garage.py <car_ID>
 
 Pour changer le nombre de kilomètres sur la voiture
 ```
-$ ./update_mileage.py <id_car> <Nombre de kilomètres>
+$ ./maj_kilometrage.py <id_car> <Nombre de kilomètres>
 ```
 
 Essayez à nouveau de changer de propriétaire.
