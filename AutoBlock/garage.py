@@ -1,10 +1,10 @@
 #!/usr/bin/python3.6
 
 
-import random
 import socket
 import sys
 import time
+import os
 
 HOST = '127.0.0.1'  # The server's hostname or IP address
 PORT = 65432        # The port used by the server
@@ -13,17 +13,38 @@ PORT = 65432        # The port used by the server
 # key pairs are actually used 
 PUBLIC_KEY = "GARAGE OFFICIEL MINI"
 
-if len(sys.argv) != 2:
+CAR_DATA_DIR = "car_data"
+
+if not os.path.exists(CAR_DATA_DIR):
+    os.makedirs(CAR_DATA_DIR)
+
+def save_car_data(car_id, mileage):
+    with open(os.path.join(CAR_DATA_DIR, f"{car_id}.txt"), "w") as f:
+        f.write(str(mileage))
+
+def load_car_data(car_id):
+    file_path = os.path.join(CAR_DATA_DIR, f"{car_id}.txt")
+    if not os.path.exists(file_path):
+        return None
+    with open(file_path, "r") as f:
+        return int(f.read().strip())
+    
+if len(sys.argv) != 3:
     print("Fournir l'ID d'une voiture!")
     sys.exit(1)
+
+car_id = sys.argv[1]
+new_mileage = int(sys.argv[2])
+
+save_car_data(car_id, new_mileage)
 
 block = {
     "timestamp": time.ctime(),
     "car": {
         # there is no check in this demo if a car with this id exists
         # but in the real implementation there would be
-        "id": sys.argv[1],
-        "mileage": random.randint(50000, 100000)
+        "id": car_id,
+        "mileage": new_mileage
     },
     "id": PUBLIC_KEY
 }
